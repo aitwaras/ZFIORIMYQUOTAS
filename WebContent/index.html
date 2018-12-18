@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<style>
+           /*gives tile icons bold color*/
+           .sapUiIcon{
+               color:#009DE0!important;
+           }
+          .sapMStdIconCreate{
+               opacity: 1.0!important;
+          }
+          .myStyle
+			{
+			    -webkit-transform: none;
+			    -webkit-transition-property: none;
+			}
+		  .extraSmallMargin {
+				margin:0.3rem !important;
+			}
+       </style>
+		
+		<script src="lib/openui5/sap-ui-core.js" 
+			id="sap-ui-bootstrap" 
+			data-sap-ui-libs="sap.m" 
+			data-sap-ui-theme="sap_bluecrystal" 
+			data-sap-ui-xx-bindingSyntax="complex"> 
+		</script>
+	
+		<script src='Application.js'></script>
+		<script type="text/javascript" src="assets/js/dataManager.js"></script>
+		<script type="text/javascript" src="assets/js/helper.js"></script>
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+		
+		<script>
+	
+				sap.ui.localResources("fiorimyquotas");
+				var app = new sap.m.App({initialPage:"idMain1"});
+				var page = sap.ui.view({id:"idMain1", viewName:"fiorimyquotas.Main", type:sap.ui.core.mvc.ViewType.XML});
+		
+				app.addPage(page);
+				app.placeAt("content");
+		
+		</script>
+	</body>
+</html>

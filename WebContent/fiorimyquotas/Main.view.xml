@@ -1,0 +1,16 @@
+<mvc:View height="100%" controllerName="fiorimyquotas.Main"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page id="appTest" navButtonTooltip="Version 1.2" showHeader="true"
+		enableScrolling="true" title="My Quotas" showNavButton="true"
+		navButtonType="Back" navButtonPress="goHome">
+		<footer class="footer">
+			<Bar>
+				<contentLeft>
+					<Button icon="sap-icon://hint" press="displayInfo"/>
+				</contentLeft>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>
+
+
